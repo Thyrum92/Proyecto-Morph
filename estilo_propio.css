@@ -1,0 +1,120 @@
+.tamañoImg {
+    width: 250px;
+    height: auto;
+}
+.tamañoText {
+    width: 500px;
+}
+.fondoColor {
+    background-color: rgb(223, 52, 37);
+}
+.fontColor {
+    color: white;
+    text-shadow: black 3px 3px 3px;
+}
+.fontShadow {
+    text-shadow: white 2px 2px 2px;
+}
+.fontHeadFootColor {
+    color: rgb(12, 52, 81);
+}
+.colorNavBar {
+    background-color: rgb(239, 166, 65)
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400&display=swap');
+
+* {
+    font-family: lato;
+}
+.backgroudImage {
+    background-image: url(./imagenes/Morph_BG_Web_03-002.png);
+    height: 700px;
+    background-position: center;
+}
+.backgroundPre {
+    background-image: url(./imagenes/MB4RPMIGK5CH5AOAHR6GGDUQVQ.jpg);
+    height: 700px;
+    background-position: center
+}
+.backgroundPost {
+    background-image: url(./imagenes/caracteristicas-facebook-gaming.avif);
+    height: 700px;
+    background-position: center
+}
+.backgroundCal {
+    background-image: url(./imagenes/604e43fd039d9_900.jpg);
+    height: 700px;
+    background-position: center
+}
+.backgroundBack {
+    background-image: url(./imagenes/il_fullxfull.2099260759_a1kf.webp);
+    height: 700px;
+    background-position: center
+}
+
+.borde-grueso {
+    border: black;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.borde-grueso:hover {
+    background-color: rgb(223, 52, 37);
+    color: white;
+    text-shadow: black 2px 2px 2px;
+}
+.colorAside {
+    background-color: lightgrey;
+}
+
+/** Animaciones **/
+
+.supervisorAnimado {
+    animation-name: supervisor;
+    animation-duration: 2s;
+}
+.nombreAnimado {
+    animation-name: nombre;
+    animation-duration: 2s;
+}
+.musicaAnimada {
+    animation-name: musica;
+    animation-duration: 2s;
+}
+.listaAnimada {
+    animation-name: lista;
+    animation-duration: 3s;
+}
+
+@keyframes supervisor {
+    from {
+        transform: translateX(2000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes nombre {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes musica {
+    from {
+        transform: translateX(-500px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes lista {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
