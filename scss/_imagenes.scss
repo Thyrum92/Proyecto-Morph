@@ -1,0 +1,23 @@
+/** Imagenes **/
+
+
+
+@media (min-width: 360px) and (max-width: 599px){
+    .imagLogo {
+        width: 300px;
+    }
+    .backgroundMain {
+        background-image: url(../imagenes/morph_backgroun.png);
+        background-size: contain ;
+        background-position: center;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    
+}
+
+@media (min-width: 1200px){
+
+}

@@ -1,0 +1,83 @@
+/*** Letras ***/
+
+$titulo: 40px;
+$azul_oscuro: rgb(12, 52, 81);
+$azul_claro: rgb(74, 150, 210);
+$azul_medio: rgb(0, 93, 159);
+$rojo: rgb(223, 52, 37);
+$naranja: rgb(239, 166, 65);
+
+
+.sombraBlanca {
+    text-shadow: white 3px 3px 3px;
+}
+.sombraBlancaFina {
+    text-shadow: white 1px 1px 1px;
+}
+.sinPunto {
+    list-style: none;
+}
+.textAlin {
+    text-align: center;
+}
+.sinDeco {
+    text-decoration: none;
+}
+
+.conPunto1 {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+
+@media (min-width: 360px) and (max-width: 599px){
+
+    .conPunto2 {
+        list-style: circle;
+        list-style-position: unset;
+        margin: 0 0 0 15px;
+    }
+    footer div ul li:hover {
+        font-weight: bold;
+        color: white;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    
+    .conPunto2 {
+        list-style: circle;
+        list-style-position: unset;
+        margin: 0 0 0 15px;
+    }
+    footer div ul li:hover {
+        font-weight: bold;
+        color: white;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    h1 {
+        font-size: $titulo;
+        color: $azul_oscuro;
+    }
+    h2 {
+        font-size: $titulo - 10px;
+        color: $azul_oscuro;
+    }
+    footer {
+        h3 {
+            font-size: $titulo - 25px;
+            color: $rojo;
+        }
+    }
+    p {
+        font-size: $titulo - 20px;
+        color: $azul_oscuro;
+    }
+  
+    
+}

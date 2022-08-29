@@ -1,0 +1,73 @@
+/*** Grids ***/
+
+
+
+@media (min-width: 360px) and (max-width: 599px){
+
+    #gridHeader {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "titulo";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #gridLogo {
+        grid-area: logo;
+    }
+    #gridTitulo {
+        grid-area: titulo;
+    }
+
+    #gridNav {
+        display: grid;
+        grid-template-areas: 
+        "inicio consultoria cx"
+        "logistica contacto contacto"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #inicio {
+        grid-area: inicio;
+    }
+    #consultoria {
+        grid-area: consultoria;
+    }
+    #cx {
+        grid-area: cx;
+    }
+    #logistica {
+        grid-area: logistica;
+    }
+    #contacto {
+        grid-area: contacto;
+    }
+
+
+    
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    
+}
+
+@media (min-width: 1200px){
+
+    #gridHeader {
+        display: grid;
+        grid-template-areas: 
+        "logo titulo";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    #gridLogo {
+        grid-area: logo;
+    }
+    #gridTitulo {
+        grid-area: titulo;
+    }
+    
+}

@@ -1,0 +1,15 @@
+/*** Animaciones ***/
+
+$azul_oscuro: rgb(12, 52, 81);
+$azul_claro: rgb(74, 150, 210);
+$azul_medio: rgb(0, 93, 159);
+$rojo: rgb(223, 52, 37);
+$naranja: rgb(239, 166, 65);
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.boxMenu:hover {
+    background-color: $azul_claro;
+}

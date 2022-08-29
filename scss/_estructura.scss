@@ -1,0 +1,86 @@
+/*** Estructura ***/
+
+$azul_oscuro: rgb(12, 52, 81);
+$azul_claro: rgb(74, 150, 210);
+$azul_medio: rgb(0, 93, 159);
+$rojo: rgb(223, 52, 37);
+$naranja: rgb(239, 166, 65);
+
+.bordeRedondo {
+    border: solid black;
+    border-radius: 3px;
+}
+.bordeNeg {
+    border: solid black;
+}
+.padMarg0 {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (min-width: 360px) and (max-width: 599px){
+
+    body {
+        height: 100vh;
+    }
+    .largoBien {
+        height: 300px;
+    }
+
+    .boxTitulo {
+        width: auto;
+    }
+
+    .margenTop {
+        margin-top: 20px;
+    }
+    .margenTop2 {
+        margin-top: 40px;
+    }
+    .paddTop {
+        padding-top: 15px;
+    }
+    .paddBot {
+        padding-bottom: 20px;
+    }
+
+    .margenBot {
+        margin-bottom: 20px;
+    }
+    .margenBot2 {
+        margin-bottom: 40px;
+    }
+
+    .centradoX {
+        margin: auto;
+    }
+
+    .boxMenu {
+        padding: 5px 10px;
+        color: $naranja;
+    }
+
+    .nav li ul {
+        display: none;
+        position: absolute;
+    }
+
+    
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    
+}
+
+@media (min-width: 1200px){
+    
+    .boxTitulo {
+        width: 100px;
+    }
+
+    .margenTop {
+        margin-top: 15px;
+    }
+
+}
