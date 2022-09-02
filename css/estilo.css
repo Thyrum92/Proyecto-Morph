@@ -10,8 +10,8 @@
   text-shadow: white 3px 3px 3px;
 }
 
-.sombraBlancaFina {
-  text-shadow: white 1px 1px 1px;
+.sombraNegraFina {
+  text-shadow: black 1px 1px 1px;
 }
 
 .sinPunto {
@@ -52,6 +52,12 @@
     font-weight: bold;
     color: white;
   }
+  .letraParrafo {
+    font-size: 25px;
+  }
+  .tituloH2 {
+    font-size: 30px;
+  }
 }
 @media (min-width: 1200px) {
   h1 {
@@ -62,13 +68,24 @@
     font-size: 30px;
     color: rgb(12, 52, 81);
   }
-  footer h3 {
-    font-size: 15px;
-    color: rgb(223, 52, 37);
-  }
   p {
     font-size: 20px;
     color: rgb(12, 52, 81);
+  }
+  .conPunto2 {
+    list-style: circle;
+    list-style-position: unset;
+    margin: 0 0 0 15px;
+  }
+  footer div ul li:hover {
+    font-weight: bold;
+    color: white;
+  }
+  .letraParrafo {
+    font-size: 30px;
+  }
+  .tituloH2 {
+    font-size: 35px;
   }
 }
 /*** Colores ***/
@@ -89,7 +106,7 @@ header {
 }
 
 .letraNaranja {
-  color: rgb(239, 166, 65);
+  color: rgb(223, 52, 37);
 }
 
 /*** Estructura ***/
@@ -147,12 +164,84 @@ header {
     position: absolute;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1199px) {
+  .largoBien {
+    height: 600px;
+  }
   .boxTitulo {
-    width: 100px;
+    width: auto;
   }
   .margenTop {
-    margin-top: 15px;
+    margin-top: 20px;
+  }
+  .margenTop2 {
+    margin-top: 40px;
+  }
+  .paddTop {
+    padding-top: 15px;
+  }
+  .paddBot {
+    padding-bottom: 20px;
+  }
+  .margenBot {
+    margin-bottom: 20px;
+  }
+  .margenBot2 {
+    margin-bottom: 40px;
+  }
+  .centradoX {
+    margin: auto;
+  }
+  .boxMenu {
+    padding: 5px 10px;
+    color: rgb(239, 166, 65);
+  }
+  .nav li ul {
+    display: none;
+    position: absolute;
+  }
+}
+@media (min-width: 1200px) {
+  .largoBien {
+    height: 500px;
+  }
+  .boxTitulo {
+    width: auto;
+  }
+  .margenTop {
+    margin-top: 20px;
+  }
+  .margenTop2 {
+    margin-top: 40px;
+  }
+  .paddTop {
+    padding-top: 15px;
+  }
+  .paddBot {
+    padding-bottom: 20px;
+  }
+  .margenBot {
+    margin-bottom: 20px;
+  }
+  .margenBot2 {
+    margin-bottom: 40px;
+  }
+  .centradoX {
+    margin: auto;
+  }
+  .boxMenu {
+    padding: 5px 10px;
+    color: rgb(239, 166, 65);
+  }
+  .nav li ul {
+    display: none;
+    position: absolute;
+  }
+  .boxSubMenu {
+    width: 200px;
+    height: 30px;
+    color: rgb(239, 166, 65);
+    text-align: center;
   }
 }
 /*** Animaciones ***/
@@ -165,18 +254,57 @@ header {
 }
 
 /** Imagenes **/
+.imagLogo {
+  width: 300px;
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
-  .imagLogo {
-    width: 300px;
-  }
   .backgroundMain {
-    background-image: url(../imagenes/morph_backgroun.png);
-    background-size: contain;
-    background-position: center;
+    background-image: url(../imagenes/morph_blanco.jpg);
+    background-size: cover;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  .backgroundMain {
+    background-image: url(../imagenes/morph_blanco.jpg);
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .backgroundMain {
+    background-image: url(../imagenes/morph_blanco.jpg);
+    background-size: cover;
   }
 }
 /*** Grids ***/
+#gridParrafo {
+  display: grid;
+  grid-area: "tituloMedio" "parrafo";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#gridTituloMedio {
+  grid-area: tituloMedio;
+}
+
+#gridParrafo {
+  grid-area: parrafo;
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
+  #gridParrafo {
+    display: grid;
+    grid-area: "tituloMedio" "parrafo";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+  }
+  #gridTituloMedio {
+    grid-area: tituloMedio;
+  }
+  #gridParrafo {
+    grid-area: parrafo;
+  }
   #gridHeader {
     display: grid;
     grid-template-areas: "logo" "titulo";
@@ -211,18 +339,72 @@ header {
     grid-area: contacto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1199px) {
   #gridHeader {
     display: grid;
-    grid-template-areas: "logo titulo";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-areas: "logo" "titulo";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   #gridLogo {
     grid-area: logo;
   }
   #gridTitulo {
     grid-area: titulo;
+  }
+  #gridNav {
+    display: grid;
+    grid-template-areas: "inicio consultoria cx logistica contacto";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  #inicio {
+    grid-area: inicio;
+  }
+  #consultoria {
+    grid-area: consultoria;
+  }
+  #cx {
+    grid-area: cx;
+  }
+  #logistica {
+    grid-area: logistica;
+  }
+  #contacto {
+    grid-area: contacto;
+  }
+}
+@media (min-width: 1200px) {
+  #gridHeader {
+    display: grid;
+    grid-template-areas: "logo" "titulo";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #gridLogo {
+    grid-area: logo;
+  }
+  #gridTitulo {
+    grid-area: titulo;
+  }
+  #gridNav {
+    display: grid;
+    grid-template-areas: "inicio consultoria cx logistica contacto";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  #inicio {
+    grid-area: inicio;
+  }
+  #consultoria {
+    grid-area: consultoria;
+  }
+  #cx {
+    grid-area: cx;
+  }
+  #logistica {
+    grid-area: logistica;
+  }
+  #contacto {
+    grid-area: contacto;
   }
 }
 

@@ -1,8 +1,37 @@
 /*** Grids ***/
 
+#gridParrafo {
+    display: grid;
+    grid-area: 
+    "tituloMedio"
+    "parrafo";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#gridTituloMedio {
+    grid-area: tituloMedio;
+}
+#gridParrafo {
+    grid-area: parrafo;
+}
 
 
 @media (min-width: 360px) and (max-width: 599px){
+
+    #gridParrafo {
+        display: grid;
+        grid-area: 
+        "tituloMedio"
+        "parrafo";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr;
+    }
+    #gridTituloMedio {
+        grid-area: tituloMedio;
+    }
+    #gridParrafo {
+        grid-area: parrafo;
+    }
 
     #gridHeader {
         display: grid;
@@ -50,6 +79,45 @@
 }
 
 @media (min-width: 600px) and (max-width: 1199px){
+
+    #gridHeader {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "titulo";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #gridLogo {
+        grid-area: logo;
+    }
+    #gridTitulo {
+        grid-area: titulo;
+    }
+
+    #gridNav {
+        display: grid;
+        grid-template-areas: 
+        "inicio consultoria cx logistica contacto"
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #inicio {
+        grid-area: inicio;
+    }
+    #consultoria {
+        grid-area: consultoria;
+    }
+    #cx {
+        grid-area: cx;
+    }
+    #logistica {
+        grid-area: logistica;
+    }
+    #contacto {
+        grid-area: contacto;
+    }
     
 }
 
@@ -58,9 +126,10 @@
     #gridHeader {
         display: grid;
         grid-template-areas: 
-        "logo titulo";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
+        "logo"
+        "titulo";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     
     #gridLogo {
@@ -68,6 +137,29 @@
     }
     #gridTitulo {
         grid-area: titulo;
+    }
+
+    #gridNav {
+        display: grid;
+        grid-template-areas: 
+        "inicio consultoria cx logistica contacto"
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #inicio {
+        grid-area: inicio;
+    }
+    #consultoria {
+        grid-area: consultoria;
+    }
+    #cx {
+        grid-area: cx;
+    }
+    #logistica {
+        grid-area: logistica;
+    }
+    #contacto {
+        grid-area: contacto;
     }
     
 }

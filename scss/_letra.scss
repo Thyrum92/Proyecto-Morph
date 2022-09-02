@@ -11,8 +11,8 @@ $naranja: rgb(239, 166, 65);
 .sombraBlanca {
     text-shadow: white 3px 3px 3px;
 }
-.sombraBlancaFina {
-    text-shadow: white 1px 1px 1px;
+.sombraNegraFina {
+    text-shadow: black 1px 1px 1px;
 }
 .sinPunto {
     list-style: none;
@@ -56,6 +56,13 @@ $naranja: rgb(239, 166, 65);
         color: white;
     }
 
+    .letraParrafo {
+        font-size: $titulo - 15px;
+    }
+    .tituloH2 {
+        font-size: $titulo - 10px;
+    }
+
 }
 
 @media (min-width: 1200px){
@@ -68,16 +75,25 @@ $naranja: rgb(239, 166, 65);
         font-size: $titulo - 10px;
         color: $azul_oscuro;
     }
-    footer {
-        h3 {
-            font-size: $titulo - 25px;
-            color: $rojo;
-        }
-    }
     p {
         font-size: $titulo - 20px;
         color: $azul_oscuro;
     }
+    .conPunto2 {
+        list-style: circle;
+        list-style-position: unset;
+        margin: 0 0 0 15px;
+    }
+    footer div ul li:hover {
+        font-weight: bold;
+        color: white;
+    }
   
+    .letraParrafo {
+        font-size: $titulo - 10px;
+    }
+    .tituloH2 {
+        font-size: $titulo - 5px;
+    }
     
 }
