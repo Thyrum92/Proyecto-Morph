@@ -4,6 +4,12 @@
 .imagLogo {
     width: 300px;
 }
+.backgroundConsul {
+    background-image: url(../imagenes/playas-del-Caribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
 
 
 @media (max-width: 599px){

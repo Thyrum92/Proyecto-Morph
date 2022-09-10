@@ -14,6 +14,12 @@ $naranja: rgb(239, 166, 65);
 .sombraNegraFina {
     text-shadow: black 1px 1px 1px;
 }
+.sombraNegraMedia {
+    text-shadow: black 2px 2px 2px;
+}
+.negrita {
+    font-weight: 900;
+}
 .sinPunto {
     list-style: none;
 }
@@ -22,6 +28,13 @@ $naranja: rgb(239, 166, 65);
 }
 .sinDeco {
     text-decoration: none;
+}
+.sinDeco2 {
+    text-decoration: none;
+}
+.sinDeco2:hover {
+    color: black;
+    font-weight: 900;
 }
 
 .conPunto1 {
@@ -33,6 +46,13 @@ h2, p {
     color: $azul_oscuro;
 }
 
+.color1 {
+    color: $azul_oscuro;
+}
+.color2 {
+    color: $rojo;
+}
+
 
 @media (min-width: 360px) and (max-width: 599px){
 
@@ -40,10 +60,6 @@ h2, p {
         list-style: circle;
         list-style-position: unset;
         margin: 0 0 0 15px;
-    }
-    footer div ul li:hover {
-        font-weight: bold;
-        color: white;
     }
     
 }
@@ -54,10 +70,6 @@ h2, p {
         list-style: circle;
         list-style-position: unset;
         margin: 0 0 0 15px;
-    }
-    footer div ul li:hover {
-        font-weight: bold;
-        color: white;
     }
 
     .letraParrafo {
@@ -87,10 +99,6 @@ h2, p {
         list-style: circle;
         list-style-position: unset;
         margin: 0 0 0 15px;
-    }
-    footer div ul li:hover {
-        font-weight: bold;
-        color: white;
     }
   
     .letraParrafo {

@@ -14,6 +14,14 @@
   text-shadow: black 1px 1px 1px;
 }
 
+.sombraNegraMedia {
+  text-shadow: black 2px 2px 2px;
+}
+
+.negrita {
+  font-weight: 900;
+}
+
 .sinPunto {
   list-style: none;
 }
@@ -26,6 +34,15 @@
   text-decoration: none;
 }
 
+.sinDeco2 {
+  text-decoration: none;
+}
+
+.sinDeco2:hover {
+  color: black;
+  font-weight: 900;
+}
+
 .conPunto1 {
   list-style: disc;
   list-style-position: inside;
@@ -35,15 +52,19 @@ h2, p {
   color: rgb(12, 52, 81);
 }
 
+.color1 {
+  color: rgb(12, 52, 81);
+}
+
+.color2 {
+  color: rgb(223, 52, 37);
+}
+
 @media (min-width: 360px) and (max-width: 599px) {
   .conPunto2 {
     list-style: circle;
     list-style-position: unset;
     margin: 0 0 0 15px;
-  }
-  footer div ul li:hover {
-    font-weight: bold;
-    color: white;
   }
 }
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -51,10 +72,6 @@ h2, p {
     list-style: circle;
     list-style-position: unset;
     margin: 0 0 0 15px;
-  }
-  footer div ul li:hover {
-    font-weight: bold;
-    color: white;
   }
   .letraParrafo {
     font-size: 25px;
@@ -80,10 +97,6 @@ h2, p {
     list-style: circle;
     list-style-position: unset;
     margin: 0 0 0 15px;
-  }
-  footer div ul li:hover {
-    font-weight: bold;
-    color: white;
   }
   .letraParrafo {
     font-size: 30px;
@@ -126,6 +139,15 @@ header {
 .padMarg0 {
   padding: 0;
   margin: 0;
+}
+
+.caja {
+  width: 400px;
+  height: 100px;
+}
+
+.caja2 {
+  height: 75vh;
 }
 
 @media (max-width: 599px) {
@@ -262,6 +284,13 @@ header {
   width: 300px;
 }
 
+.backgroundConsul {
+  background-image: url(../imagenes/playas-del-Caribe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
 @media (max-width: 599px) {
   .backgroundMain {
     background-image: url(../imagenes/morph_blanco.jpg);
@@ -294,6 +323,38 @@ header {
 
 #gridParrafo {
   grid-area: parrafo;
+}
+
+/*** Sectores **/
+#gridGen {
+  display: grid;
+  grid-template-areas: "sector aside" "spoti aside";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 80px 1fr;
+}
+
+#gridSector {
+  grid-area: sector;
+}
+
+#gridSpoti {
+  grid-area: spoti;
+  display: grid;
+  grid-template-areas: "spoti1 spoti2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#gridAside {
+  grid-area: aside;
+}
+
+#spoti1 {
+  grid-area: spoti1;
+}
+
+#spoti2 {
+  grid-area: spoti2;
 }
 
 @media (max-width: 599px) {
@@ -410,6 +471,11 @@ header {
   #contacto {
     grid-area: contacto;
   }
+}
+/** FlexBox **/
+.centroFlex {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=estilo.css.map */

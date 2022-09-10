@@ -15,6 +15,41 @@
     grid-area: parrafo;
 }
 
+/*** Sectores **/
+
+#gridGen {
+    display: grid;
+    grid-template-areas:
+    "sector aside"
+    "spoti aside";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px 1fr;
+}
+
+#gridSector {
+    grid-area: sector;
+}
+#gridSpoti {
+    grid-area: spoti;
+    display: grid;
+    grid-template-areas:
+    "spoti1 spoti2" ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#gridAside {
+    grid-area: aside;
+}
+
+#spoti1{
+    grid-area: spoti1;
+}
+#spoti2{
+    grid-area: spoti2;
+}
+
+
+
 
 @media (max-width: 599px){
 
