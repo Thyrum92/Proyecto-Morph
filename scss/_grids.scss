@@ -109,6 +109,15 @@
         grid-area: contacto;
     }
 
+    #gridGen {
+        display: grid;
+        grid-template-areas:
+        "sector"
+        "spoti"
+        "aside";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 0.5fr;
+    }
 
     
 }
